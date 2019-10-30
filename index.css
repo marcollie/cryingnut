@@ -1,0 +1,190 @@
+body, h1, h2, ul, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+.cover {
+    background-image: url(images/cover.jpg);
+    color: aliceblue;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background-size: cover;
+    background-position: bottom;
+    transition: padding 1s;
+}
+
+.cover-title {
+    font-size: 13vw;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: normal;
+    line-height: 0.8;
+    font-style: italic;
+    transition: font-size .5s;
+}
+
+.cover-title span {
+    font-family: 'arial';
+    font-size: 0.3em;
+    display: block;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline:after {
+    content: '';
+    background-color: rgba(61, 61, 61,0.3);
+    position: absolute;
+    left: 50%;
+    top: 5vw;
+    bottom: 0;
+    width: 6px;
+    border-radius: 60px;
+    margin-left: -5px;
+    z-index: -4;
+}
+
+.timeline-item {
+    margin-top: 100px;
+}
+
+.wrapper {
+    color: white;
+    font-size: 0.8em;
+    padding: 0 30px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: rgba(61, 61, 61,0.4);
+    color: #999;
+    padding: 0 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.card-icon {
+    width: 130px;
+    height: auto;
+    vertical-align: top;
+    margin: -50px 30px 30px;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 12vw;
+    color: orange;
+    font-family: 'impact';
+    line-height: 1;
+    margin: 20px;
+}
+
+.card-definition {
+    margin: 20px;
+}
+
+.card-definition dt {
+    font-size: 25px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+@media ( min-width: 720px) {
+    .cover {
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+    .cover-title {
+        font-size: 12vw;
+    }
+    
+    .timeline:after {
+        background-color: orangered;
+    }
+    
+    .timeline-item {
+        width: 50%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+        margin-left: auto;
+        margin-top: -150px;
+        margin-bottom: -200px;
+        text-align: left;
+    }
+    .card-title {
+        font-size: 6vw;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .card-title:after {
+        content: ' ';
+        position: absolute;
+        right: -69px;
+        top: 30%;
+        background-color: white;
+        border: 6px solid orange;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transform: translateY(50% ,-50%);
+        z-index: 0;
+        background-color: rgba(61, 61, 61,0.4);
+    }
+    
+    .card {
+        position: relative;
+    }
+    
+    .card-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .timeline-item:nth-child(even) .card-icon {
+        left: auto;
+        right: 0;
+    }
+    .timeline-item:nth-child(even) .card-title:after {
+        left: -73px;
+        transform: translateY(50% ,-50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+body, h1, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #09222b;
+    color: #ddd;
+}
+
+.cover {
+    height: 150px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(images/cover.png);
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 0.8;
+    font-family: 'Yellowtail', cursive;
+}
+
+.cover h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cover h1 span {
+    display: block;
+    font-size: 0.15em;
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.timeline {
+    margin: 100px 0;
+    position: relative;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+.timeline:after {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #000;
+}
+
+.package {
+    border-radius: 20px;
+    background-color: #010b0f;
+    margin: 50px 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.package-icon {
+    width: 100px;
+    display: block;
+    margin: -50px auto 20px;
+}
+
+.package-year {
+    color: dodgerblue;
+    font-size: 6rem;
+    display: inline-block;
+    font-family: 'Passion One', cursive;
+}
+
+.package-name {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.package-name-code {
+    display: block;
+    font-size: 0.5em;
+    color: dodgerblue;
+}
+
+.package-feature {
+    color: #666;
+    line-height: 1.55;
+}
+
+@media (min-width: 960px) {
+    .cover {
+        height: 50vh;
+        font-size: 13rem;
+    }
+    .timeline:after {
+        margin: 70px 0 -200px;
+        background-color: dodgerblue;
+    }
+    .timeline-item:first-child {
+        margin-top: 0;
+    }
+    .timeline-item {
+        width: 50%;
+        text-align: right;
+        margin: -150px 0;
+    }
+    .timeline-item:nth-child(even) {
+        margin-left: auto;
+        text-align: left;
+    }
+    
+    .timeline-item:nth-child(even) .package-icon {
+        left: auto;
+        right: 0;
+    }
+    .package-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: -50px 20px 0;
+    }
+    .package-year {
+        position: relative;
+    }
+    .package-year:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border: 5px solid dodgerblue;
+        background-color: #09222b;  
+        border-radius: 50%;
+        margin: 0 -60px;
+    }
+    .package-year:before {
+        content: ' ';
+        width: 50px;
+        height: 50px;
+        background-color: #010b0f;
+        position: absolute;
+        top: 50%;
+        right: -25px;;
+        z-index: -1;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .timeline-item:nth-child(even) .package-year:after {
+        left: 0;
+    }
+    .timeline-item:nth-child(even) .package-year:before  {
+        left: -25px;
+    }
+}
+
+
+
+
+
+
+
