@@ -7,7 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="modal hidden">
+        <div class="modal_overlay"></div>
+        <div class="modal_content">
+            <h1 class="modal_text">I'm a modal</h1>
+            <button>❌</button>
+        </div>
+    </div>
     <div class="cover">
         <h1 class="cover-title">
             <span>The History of</span>
@@ -19,7 +25,7 @@
         <ul class="timeline">
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/album.jpg" alt="아워네이션"/>
+                    <img class="card-icon" id="img0" src="images/album.jpg" alt="아워네이션"/>
                     <h2 class="card-title">1996</h2>
                     <dl class="card-definition">
                         <dt>아워네이션 1집</dt>
@@ -29,7 +35,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/1album.jpg" alt="말달리자"/>
+                    <img class="card-icon" id="img1" src="images/1album.jpg" alt="말달리자"/>
                     <h2 class="card-title">1998</h2>
                     <dl class="card-definition">
                         <dt>1집 말달리자</dt>
@@ -39,7 +45,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/2album.jpg" alt="서커스 매직 유랑단"/>
+                    <img class="card-icon" id="img2" src="images/2album.jpg" alt="서커스 매직 유랑단"/>
                     <h2 class="card-title">1999</h2>
                     <dl class="card-definition">
                         <dt>2집 서커스 매직 유랑단</dt>
@@ -49,7 +55,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/3album.jpg" alt="하수연가"/>
+                    <img class="card-icon" id="img3" src="images/3album.jpg" alt="하수연가"/>
                     <h2 class="card-title">2001</h2>
                     <dl class="card-definition">
                         <dt>3집 하수연가</dt>
@@ -59,7 +65,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/4album.png" alt="고물라디오"/>
+                    <img class="card-icon" id="img4" src="images/4album.png" alt="고물라디오"/>
                     <h2 class="card-title">2002</h2>
                     <dl class="card-definition">
                         <dt>4집 고물라디오</dt>
@@ -69,7 +75,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/5album.jpg" alt="OK 목장의 젖소"/>
+                    <img class="card-icon" id="img5" src="images/5album.jpg" alt="OK 목장의 젖소"/>
                     <h2 class="card-title">2006</h2>
                     <dl class="card-definition">
                         <dt>5집 OK 목장의 젖소</dt>
@@ -79,7 +85,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/6album.jpg" alt="불편한 파티"/>
+                    <img class="card-icon" id="img6" src="images/6album.jpg" alt="불편한 파티"/>
                     <h2 class="card-title">2009</h2>
                     <dl class="card-definition">
                         <dt>6집 불편한 파티</dt>
@@ -89,7 +95,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/7album.jpg" alt="FLAMING NUTS"/>
+                    <img class="card-icon" id="img7" src="images/7album.jpg" alt="FLAMING NUTS"/>
                     <h2 class="card-title">2013</h2>
                     <dl class="card-definition">
                         <dt>7집 FLAMING NUTS</dt>
@@ -99,7 +105,7 @@
             </li>
             <li class="timeline-item">
                 <div class="card">
-                    <img class="card-icon" src="images/8album.jpg" alt="리모델링"/>
+                    <img class="card-icon" id="img8" src="images/8album.jpg" alt="리모델링"/>
                     <h2 class="card-title">2018</h2>
                     <dl class="card-definition">
                         <dt>8집 리모델링</dt>
@@ -109,5 +115,6 @@
             </li>
         </ul>
     </div>
+    <script src="modal.js"></script>
 </body>
 </html>
