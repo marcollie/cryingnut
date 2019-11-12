@@ -227,7 +227,12 @@ body {
     margin-bottom: 5px;
 }
 
-
+@media ( max-width: 768px ) {
+    .track {
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+}
 
 
 
